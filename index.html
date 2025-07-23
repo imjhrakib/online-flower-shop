@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Flower Shop</title>
   <style>
     body {
@@ -23,7 +23,8 @@
     .description-color {
       color: rgba(39, 39, 39, 0.6);
     }
-    .btn-color{
+
+    .btn-color {
       background-color: #E55473;
     }
   </style>
@@ -32,32 +33,44 @@
 <body>
   <header class="bg-[#E554731A] flex items-center justify-center">
     <div class="mr-[-90px]">
-      <div class="text-[50px] font-extrabold w-[600px] title-color mb-[10px]">Let's make <br> beautiful flowers a <br> part of
+      <div class="text-[50px] font-extrabold w-[600px] title-color mb-[10px]">Let's make <br> beautiful flowers a <br>
+        part of
         your life.</div>
-      <div class="text-[12px] font-normal w-[450px] description-color mb-[10px]">It is a long established fact that a reader will
+      <div class="text-[12px] font-normal w-[450px] description-color mb-[10px]">It is a long established fact that a
+        reader will
         be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is
         that it has a more-or-less normal distribution of letters.</div>
       <button class="btn-color text-[16px] p-[10px] text-white rounded-[8px]">Shop Now</button>
     </div>
-    <div class="pt-[10px]"><img width="370px" height="450px" src="images/pngwing 10.png" alt=""></div>
+    <div class="pt-[10px]"><img width="370px" height="450px" src="./images/pngwing 10.png" alt=""></div>
   </header>
   <main>
-    <section class="simple-description">
-      <div class="simple-desc-title">Our Featured Flowers</div>
-      <div class="simple-desc">It is a long established fact that a reader will be distracted by the readable content of
-        a page when looking at its layout.</div>
-    </section>
-    <section class="flower-tree">
-      <div class="flower-1 display-flex">
-        <img src="images/pngwing 6.png" alt="">
+    <section class="mt-[80px]">
+      <div class="text-center mb-[50px]">
+        <h3 class="font-extrabold text-[30px] title-color mb-[20px]">Our Featured Flowers</h3>
+        <h6 class="text-[16px] font-normal description-color w-[550px] mx-auto">It is a long established fact that a
+          reader will be distracted by the readable content of
+          a page when looking at its layout.</h6>
       </div>
-      <div class="flower-2 display-flex">
-        <img src="images/pngwing 5.png" alt="">
-        <h6 class="flower-description">flower tree</h6>
-      </div>
-      <div class="flower-3 display-flex">
-        <img src="images/pngwing 7.png" alt="">
-        <h6 class="flower-description">flower tree</h6>
+      <div class="flex mx-auto w-[900px] gap-[20px] items-center justify-center">
+        <div>
+          <div class="flex items-end justify-center bg-[rgba(167,_33,_98,_0.15)] rounded-tl-[50%] rounded-tr-[50%] w-[300px] h-[350px]">
+            <img class="mt-[30px]" height="200px" width="200px" src="./images/pngwing 6.png" alt="">
+          </div>
+          <h6 class="text-center mt-[10px] text-[rgba(39,_39,_39,_1)">Pink</h6>
+        </div>
+        <div class="">
+          <div class="flex items-center justify-center bg-[rgba(5,_151,_160,_0.15)] rounded-tl-[50%] rounded-tr-[50%] w-[300px] h-[350px]">
+            <img class="mt-[30px]" height="200px" width="220px" src="./images/pngwing 5.png" alt="">
+          </div>
+          <h6 class="text-center mt-[10px] text-[rgba(39,_39,_39,_1)">Cyan</h6>
+        </div>
+        <div>
+          <div class="flex items-end justify-center bg-[rgba(71,_125,_17,_0.15)] rounded-tl-[50%] rounded-tr-[50%] w-[300px] h-[350px]">
+            <img class="mt-[30px]" height="200px" width="220px" src="./images/pngwing 7.png" alt="">
+          </div>
+          <h6 class="text-center mt-[10px] text-[rgba(39,_39,_39,_1)]">Olive Green</h6>
+        </div>
       </div>
     </section>
   </main>
