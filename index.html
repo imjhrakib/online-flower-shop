@@ -4,30 +4,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flower Shop</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <title>Flower Shop</title>
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+
+    .title-color {
+      color: rgba(39, 39, 39, 1);
+    }
+
+    .description-color {
+      color: rgba(39, 39, 39, 0.6);
+    }
+    .btn-color{
+      background-color: #E55473;
+    }
+  </style>
 </head>
 
 <body>
-  <header class="hero-section">
-    <div class="hero-left-section">
-      <div class="hero-title">Let's make beautiful flowers a part of your life.</div>
-      <div class="hero-description">It is a long established fact that a reader will be distracted by the readable
-        content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-        normal distribution of letters.</div>
-      <button class="hero-btn">Shop Now</button>
+  <header class="bg-[#E554731A] flex items-center justify-center">
+    <div class="mr-[-90px]">
+      <div class="text-[50px] font-extrabold w-[600px] title-color mb-[10px]">Let's make <br> beautiful flowers a <br> part of
+        your life.</div>
+      <div class="text-[12px] font-normal w-[450px] description-color mb-[10px]">It is a long established fact that a reader will
+        be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+        that it has a more-or-less normal distribution of letters.</div>
+      <button class="btn-color text-[16px] p-[10px] text-white rounded-[8px]">Shop Now</button>
     </div>
-    <div class="hero-img"><img src="images/pngwing 10.png" alt=""></div>
+    <div class="pt-[10px]"><img width="370px" height="450px" src="images/pngwing 10.png" alt=""></div>
   </header>
   <main>
     <section class="simple-description">
       <div class="simple-desc-title">Our Featured Flowers</div>
-      <div class="simple-desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+      <div class="simple-desc">It is a long established fact that a reader will be distracted by the readable content of
+        a page when looking at its layout.</div>
+    </section>
+    <section class="flower-tree">
+      <div class="flower-1 display-flex">
+        <img src="images/pngwing 6.png" alt="">
+      </div>
+      <div class="flower-2 display-flex">
+        <img src="images/pngwing 5.png" alt="">
+        <h6 class="flower-description">flower tree</h6>
+      </div>
+      <div class="flower-3 display-flex">
+        <img src="images/pngwing 7.png" alt="">
+        <h6 class="flower-description">flower tree</h6>
+      </div>
     </section>
   </main>
   <footer>
